@@ -18,6 +18,11 @@ class ActorDetail extends Component {
             pageTitle = "Popular"
         }
 
+        //set the title to "Now Playing" if type="now_playing"
+        if(this.props.type === "now_playing") {
+            pageTitle = "Now Playing"
+        }
+
         //variables to parse query string from URL into a proper object
         const queryString = require('query-string');
         const parsedQueryString = queryString.parse(window.location.search);

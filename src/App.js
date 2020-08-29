@@ -32,6 +32,9 @@ function App() {
           <Route exact path="/popular">
             <BrowseMovie type="popular" />
           </Route>
+          <Route exact path="/now_playing">
+            <BrowseMovie type="now_playing" />
+          </Route>
           <Route exact path="/search">
             <BrowseMovie type="search" />
           </Route>

@@ -8,10 +8,16 @@ class Home extends Component {
     render() {
         return (
         <div className ="home-container">
-            <MovieSlider type="popular" count="5"/>
+            <h1 className="home-title">CouchPotato - Browse for Your Favourite Movies Here!</h1>
+
+            <MovieSlider type="popular" count="10"/>
             <div className="container content no-pad">
-                <h1 className="home-title">CouchPotato - Browse for Your Favourite Movies Here!</h1>
+                <h2>Top Rated Movies</h2>
                 <MovieCard type="top_rated" count="10"/>
+                <h2>Now Playing</h2>
+
+                <MovieCard type="now_playing" count="10"/>
+
             </div>
         </div>
         

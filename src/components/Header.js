@@ -17,6 +17,7 @@ class Header extends Component {
                         <Nav className="ml-auto">
                             <Nav.Link href="/top_rated" activeClassName="active">Top Rated</Nav.Link>
                             <Nav.Link href="/popular" activeClassName="active">Popular</Nav.Link>
+                            <Nav.Link href="/now_playing" activeClassName="active">Now Playing</Nav.Link>
                         </Nav>
                         <SearchBox />
                     </Navbar.Collapse>
