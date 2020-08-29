@@ -342,6 +342,7 @@ header {
 .search-input {
   .btn {
     display: flex;
+    align-items: center;
 
     &:hover {
       background-color: darken(#326ec8, 10%);
