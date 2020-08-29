@@ -32,7 +32,7 @@ class MovieCasts extends Component {
                 <ul className="cast-card-container list-unstyled col-12">
                     {this.state.movieCasts.map(cast => 
                         <li className="cast-card">
-                            <Link to={ `/casts/${cast.id}` } title={cast.name}>
+                            <a href={ `/casts/${cast.id}` } title={cast.name}>
                                 <div className="image-container">
                                     {/* Render the image from API if there is a profile_path */}
                                     {cast.profile_path &&
@@ -45,7 +45,7 @@ class MovieCasts extends Component {
                                 <div class="cast-card--title">
                                     <p>{cast.name} as {cast.character}</p>
                                 </div>
-                            </Link>
+                            </a>
                         </li>
                     )}
                 </ul>

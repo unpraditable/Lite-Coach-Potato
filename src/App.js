@@ -26,13 +26,13 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/top_rated">
+          <Route path="/top_rated">
             <BrowseMovie type="top_rated" />
           </Route>
-          <Route exact path="/popular">
+          <Route path="/popular">
             <BrowseMovie type="popular" />
           </Route>
-          <Route exact path="/now_playing">
+          <Route path="/now_playing">
             <BrowseMovie type="now_playing" />
           </Route>
           <Route exact path="/search">
