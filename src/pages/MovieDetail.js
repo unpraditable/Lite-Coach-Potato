@@ -1,23 +1,21 @@
 //this component is to render the movie detail page of this application
 
 import React, {Component} from 'react'; 
-import ActorInfo from '../components/ActorInfo';
-import MovieCard from '../components/MovieCard';
+import MovieInfo from '../components/MovieInfo';
+import MovieCasts from '../components/MovieCasts';
 
-class ActorDetail extends Component {
+class MovieDetail extends Component {
+
     render() {
+        const { movieSlug } = this.props.match.params
         return (
-            <div className="container content no-pad">
-                <div className="section">
-                    <ActorInfo actor_id="119143" />
-                </div>
-                <div className="section">
-                    <h2>Movieography</h2>
-                    <MovieCard count="5" actor_id="119143"/>
-                </div>
-            </div>
+        <div className="container content no-pad">
+            <MovieInfo movie_id ={`${movieSlug}`}/>
+            <MovieCasts movie_id ={`${movieSlug}`}/>
+        </div>
+
         )
     }
 }
 
-export default ActorDetail;
+export default MovieDetail;
